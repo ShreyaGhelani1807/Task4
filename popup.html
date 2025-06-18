@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Time Tracker Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 350px;
+    }
+    h3, h4 {
+      margin-top: 20px;
+    }
+    canvas {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Today's Activity</h3>
+  <ul id="siteList">
+    <li>Loading...</li>
+  </ul>
+
+  <h4>Productivity Breakdown</h4>
+  <canvas id="productivityChart" width="300" height="300"></canvas>
+
+  <h4>Last 7 Days Report</h4>
+  <canvas id="weeklyChart" width="300" height="200"></canvas>
+
+  <!-- Chart.js library -->
+  <script src="chart.min.js"></script>
+  <!-- Your analytics logic -->
+  <script src="popup.js"></script>
+</body>
+</html>
